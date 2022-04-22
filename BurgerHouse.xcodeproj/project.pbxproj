@@ -9,14 +9,26 @@
 /* Begin PBXBuildFile section */
 		7D4BE97C2811CD31008318A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE97B2811CD31008318A5 /* AppDelegate.swift */; };
 		7D4BE97E2811CD31008318A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE97D2811CD31008318A5 /* SceneDelegate.swift */; };
-		7D4BE9802811CD31008318A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE97F2811CD31008318A5 /* ViewController.swift */; };
-		7D4BE9832811CD31008318A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9812811CD31008318A5 /* Main.storyboard */; };
 		7D4BE9862811CD31008318A5 /* BurgerHouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9842811CD31008318A5 /* BurgerHouse.xcdatamodeld */; };
-		7D4BE9882811CD33008318A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9872811CD33008318A5 /* Assets.xcassets */; };
-		7D4BE98B2811CD33008318A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9892811CD33008318A5 /* LaunchScreen.storyboard */; };
 		7D4BE9962811CD34008318A5 /* BurgerHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9952811CD34008318A5 /* BurgerHouseTests.swift */; };
 		7D4BE9A02811CD34008318A5 /* BurgerHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE99F2811CD34008318A5 /* BurgerHouseUITests.swift */; };
 		7D4BE9A22811CD34008318A5 /* BurgerHouseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9A12811CD34008318A5 /* BurgerHouseUITestsLaunchTests.swift */; };
+		7D4BE9AF2811CD4B008318A5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9AE2811CD4B008318A5 /* NetworkManager.swift */; };
+		7D4BE9B12811CF3B008318A5 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9B02811CF3B008318A5 /* Burger.swift */; };
+		7D4BE9B62811E70E008318A5 /* BurgerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9B52811E70E008318A5 /* BurgerListViewController.swift */; };
+		7D4BE9B82811E720008318A5 /* BurgerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9B72811E720008318A5 /* BurgerListViewModel.swift */; };
+		7D4BE9BC2811EA46008318A5 /* BurgerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9BA2811EA46008318A5 /* BurgerCell.swift */; };
+		7D4BE9BF2811EA59008318A5 /* BurgerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9BE2811EA59008318A5 /* BurgerCellViewModel.swift */; };
+		7D4BE9C2281262C8008318A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9812811CD31008318A5 /* Main.storyboard */; };
+		7D4BE9C3281262CC008318A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9892811CD33008318A5 /* LaunchScreen.storyboard */; };
+		7D4BE9C4281262D4008318A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9872811CD33008318A5 /* Assets.xcassets */; };
+		7D4BE9CB28126552008318A5 /* BurgerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BE9CA28126552008318A5 /* BurgerCell.xib */; };
+		7D4BE9CE2812CAD0008318A5 /* BurgerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9CD2812CACF008318A5 /* BurgerDetailsViewController.swift */; };
+		7D4BE9D02812CAE2008318A5 /* BurgerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9CF2812CAE2008318A5 /* BurgerDetailsViewModel.swift */; };
+		7D4BE9DE2812DC32008318A5 /* BDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9DD2812DC32008318A5 /* BDCell.swift */; };
+		7D4BE9E02812DC58008318A5 /* BDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9DF2812DC58008318A5 /* BDCellViewModel.swift */; };
+		7D4BE9E628132013008318A5 /* AddToBasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9E528132013008318A5 /* AddToBasketViewModel.swift */; };
+		7D4BE9E828132031008318A5 /* AddToBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9E728132031008318A5 /* AddToBasketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +52,6 @@
 		7D4BE9782811CD31008318A5 /* BurgerHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4BE97B2811CD31008318A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D4BE97D2811CD31008318A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D4BE97F2811CD31008318A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D4BE9822811CD31008318A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D4BE9852811CD31008318A5 /* BurgerHouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BurgerHouse.xcdatamodel; sourceTree = "<group>"; };
 		7D4BE9872811CD33008318A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +62,19 @@
 		7D4BE99B2811CD34008318A5 /* BurgerHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgerHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4BE99F2811CD34008318A5 /* BurgerHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerHouseUITests.swift; sourceTree = "<group>"; };
 		7D4BE9A12811CD34008318A5 /* BurgerHouseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerHouseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D4BE9AE2811CD4B008318A5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7D4BE9B02811CF3B008318A5 /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		7D4BE9B52811E70E008318A5 /* BurgerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerListViewController.swift; sourceTree = "<group>"; };
+		7D4BE9B72811E720008318A5 /* BurgerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerListViewModel.swift; sourceTree = "<group>"; };
+		7D4BE9BA2811EA46008318A5 /* BurgerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerCell.swift; sourceTree = "<group>"; };
+		7D4BE9BE2811EA59008318A5 /* BurgerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerCellViewModel.swift; sourceTree = "<group>"; };
+		7D4BE9CA28126552008318A5 /* BurgerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BurgerCell.xib; sourceTree = "<group>"; };
+		7D4BE9CD2812CACF008318A5 /* BurgerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerDetailsViewController.swift; sourceTree = "<group>"; };
+		7D4BE9CF2812CAE2008318A5 /* BurgerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerDetailsViewModel.swift; sourceTree = "<group>"; };
+		7D4BE9DD2812DC32008318A5 /* BDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDCell.swift; sourceTree = "<group>"; };
+		7D4BE9DF2812DC58008318A5 /* BDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDCellViewModel.swift; sourceTree = "<group>"; };
+		7D4BE9E528132013008318A5 /* AddToBasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketViewModel.swift; sourceTree = "<group>"; };
+		7D4BE9E728132031008318A5 /* AddToBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +125,14 @@
 		7D4BE97A2811CD31008318A5 /* BurgerHouse */ = {
 			isa = PBXGroup;
 			children = (
+				7D4BE9B42811E6AA008318A5 /* BurgerList */,
+				7D4BE9CC2812CA4B008318A5 /* BurgerDetails */,
+				7D4BE9B22811E682008318A5 /* Services */,
+				7D4BE9B32811E68F008318A5 /* Models */,
+				7D4BE9E128131ED3008318A5 /* Storyboard */,
+				7D4BE9872811CD33008318A5 /* Assets.xcassets */,
 				7D4BE97B2811CD31008318A5 /* AppDelegate.swift */,
 				7D4BE97D2811CD31008318A5 /* SceneDelegate.swift */,
-				7D4BE97F2811CD31008318A5 /* ViewController.swift */,
-				7D4BE9812811CD31008318A5 /* Main.storyboard */,
-				7D4BE9872811CD33008318A5 /* Assets.xcassets */,
-				7D4BE9892811CD33008318A5 /* LaunchScreen.storyboard */,
 				7D4BE98C2811CD33008318A5 /* Info.plist */,
 				7D4BE9842811CD31008318A5 /* BurgerHouse.xcdatamodeld */,
 			);
@@ -130,6 +156,80 @@
 			path = BurgerHouseUITests;
 			sourceTree = "<group>";
 		};
+		7D4BE9B22811E682008318A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9AE2811CD4B008318A5 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7D4BE9B32811E68F008318A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9B02811CF3B008318A5 /* Burger.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D4BE9B42811E6AA008318A5 /* BurgerList */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9B52811E70E008318A5 /* BurgerListViewController.swift */,
+				7D4BE9B72811E720008318A5 /* BurgerListViewModel.swift */,
+				7D4BE9B92811EA1C008318A5 /* BurgerCell */,
+			);
+			path = BurgerList;
+			sourceTree = "<group>";
+		};
+		7D4BE9B92811EA1C008318A5 /* BurgerCell */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9BA2811EA46008318A5 /* BurgerCell.swift */,
+				7D4BE9CA28126552008318A5 /* BurgerCell.xib */,
+				7D4BE9BE2811EA59008318A5 /* BurgerCellViewModel.swift */,
+			);
+			path = BurgerCell;
+			sourceTree = "<group>";
+		};
+		7D4BE9CC2812CA4B008318A5 /* BurgerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9CD2812CACF008318A5 /* BurgerDetailsViewController.swift */,
+				7D4BE9CF2812CAE2008318A5 /* BurgerDetailsViewModel.swift */,
+				7D4BE9E428131F72008318A5 /* AddInBasketView */,
+				7D4BE9DC2812DB8E008318A5 /* BurgerDetailCell */,
+			);
+			path = BurgerDetails;
+			sourceTree = "<group>";
+		};
+		7D4BE9DC2812DB8E008318A5 /* BurgerDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9DD2812DC32008318A5 /* BDCell.swift */,
+				7D4BE9DF2812DC58008318A5 /* BDCellViewModel.swift */,
+			);
+			path = BurgerDetailCell;
+			sourceTree = "<group>";
+		};
+		7D4BE9E128131ED3008318A5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9812811CD31008318A5 /* Main.storyboard */,
+				7D4BE9892811CD33008318A5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7D4BE9E428131F72008318A5 /* AddInBasketView */ = {
+			isa = PBXGroup;
+			children = (
+				7D4BE9E528132013008318A5 /* AddToBasketViewModel.swift */,
+				7D4BE9E728132031008318A5 /* AddToBasketView.swift */,
+			);
+			path = AddInBasketView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,7 +239,7 @@
 			buildPhases = (
 				7D4BE9742811CD31008318A5 /* Sources */,
 				7D4BE9752811CD31008318A5 /* Frameworks */,
-				7D4BE9762811CD31008318A5 /* Resources */,
+				7D4BE9C1281262C1008318A5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -230,16 +330,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7D4BE9762811CD31008318A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D4BE98B2811CD33008318A5 /* LaunchScreen.storyboard in Resources */,
-				7D4BE9882811CD33008318A5 /* Assets.xcassets in Resources */,
-				7D4BE9832811CD31008318A5 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7D4BE98F2811CD34008318A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +344,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D4BE9C1281262C1008318A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4BE9C4281262D4008318A5 /* Assets.xcassets in Resources */,
+				7D4BE9C3281262CC008318A5 /* LaunchScreen.storyboard in Resources */,
+				7D4BE9CB28126552008318A5 /* BurgerCell.xib in Resources */,
+				7D4BE9C2281262C8008318A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,10 +362,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4BE9802811CD31008318A5 /* ViewController.swift in Sources */,
+				7D4BE9B62811E70E008318A5 /* BurgerListViewController.swift in Sources */,
+				7D4BE9E828132031008318A5 /* AddToBasketView.swift in Sources */,
+				7D4BE9B12811CF3B008318A5 /* Burger.swift in Sources */,
+				7D4BE9E02812DC58008318A5 /* BDCellViewModel.swift in Sources */,
+				7D4BE9E628132013008318A5 /* AddToBasketViewModel.swift in Sources */,
+				7D4BE9B82811E720008318A5 /* BurgerListViewModel.swift in Sources */,
+				7D4BE9D02812CAE2008318A5 /* BurgerDetailsViewModel.swift in Sources */,
 				7D4BE97C2811CD31008318A5 /* AppDelegate.swift in Sources */,
+				7D4BE9DE2812DC32008318A5 /* BDCell.swift in Sources */,
+				7D4BE9CE2812CAD0008318A5 /* BurgerDetailsViewController.swift in Sources */,
+				7D4BE9BF2811EA59008318A5 /* BurgerCellViewModel.swift in Sources */,
+				7D4BE9AF2811CD4B008318A5 /* NetworkManager.swift in Sources */,
 				7D4BE97E2811CD31008318A5 /* SceneDelegate.swift in Sources */,
 				7D4BE9862811CD31008318A5 /* BurgerHouse.xcdatamodeld in Sources */,
+				7D4BE9BC2811EA46008318A5 /* BurgerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +558,7 @@
 				INFOPLIST_FILE = BurgerHouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +586,7 @@
 				INFOPLIST_FILE = BurgerHouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
