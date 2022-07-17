@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PinterestLayout
 
 private let reuseIdentifier = "Cell"
 
@@ -21,6 +22,10 @@ class BurgerListViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
+          layout.delegate = self
+        }
         
         let nib = UINib(nibName: BurgerCell.reuseId, bundle: Bundle.main)
         self.collectionView!.register(nib, forCellWithReuseIdentifier: BurgerCell.reuseId)
@@ -67,11 +72,20 @@ class BurgerListViewController: UICollectionViewController {
 // MARK: - UICollectionViewFlowLayout
 extension BurgerListViewController: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        viewModel.sizeForItemAt(for: collectionView, with: indexPath)
+        let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
+        return CGSize(width: itemSize, height: itemSize)
     }
+}
+
+extension BurgerListViewController: PinterestLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        return UIImage(named: viewModel.cellViewModel(with: indexPath).burgerName)?.size.height ?? 0
+    }
+    
+    
 }

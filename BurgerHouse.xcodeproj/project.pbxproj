@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45E1D2EFFA2EC1B91B884FA7 /* Pods_BurgerHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8F8C10A3ACF17E4258D0F /* Pods_BurgerHouse.framework */; };
 		7D4BE97C2811CD31008318A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE97B2811CD31008318A5 /* AppDelegate.swift */; };
 		7D4BE97E2811CD31008318A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE97D2811CD31008318A5 /* SceneDelegate.swift */; };
 		7D4BE9862811CD31008318A5 /* BurgerHouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9842811CD31008318A5 /* BurgerHouse.xcdatamodeld */; };
@@ -29,6 +30,7 @@
 		7D4BE9E02812DC58008318A5 /* BDCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9DF2812DC58008318A5 /* BDCellViewModel.swift */; };
 		7D4BE9E628132013008318A5 /* AddToBasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9E528132013008318A5 /* AddToBasketViewModel.swift */; };
 		7D4BE9E828132031008318A5 /* AddToBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4BE9E728132031008318A5 /* AddToBasketView.swift */; };
+		7DBBD50128843435009B2E41 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBBD50028843435009B2E41 /* PinterestLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		7D4BE9DF2812DC58008318A5 /* BDCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDCellViewModel.swift; sourceTree = "<group>"; };
 		7D4BE9E528132013008318A5 /* AddToBasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketViewModel.swift; sourceTree = "<group>"; };
 		7D4BE9E728132031008318A5 /* AddToBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketView.swift; sourceTree = "<group>"; };
+		7DBBD50028843435009B2E41 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		8C4391F4B5187BF3ADF441A0 /* Pods-BurgerHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerHouse.debug.xcconfig"; path = "Target Support Files/Pods-BurgerHouse/Pods-BurgerHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE8F8C10A3ACF17E4258D0F /* Pods_BurgerHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurgerHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C765977AB8F7C7BC3D97537E /* Pods-BurgerHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerHouse.release.xcconfig"; path = "Target Support Files/Pods-BurgerHouse/Pods-BurgerHouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E1D2EFFA2EC1B91B884FA7 /* Pods_BurgerHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2528518F06FC4DED8F755738 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C4391F4B5187BF3ADF441A0 /* Pods-BurgerHouse.debug.xcconfig */,
+				C765977AB8F7C7BC3D97537E /* Pods-BurgerHouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D4BE96F2811CD31008318A5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,8 @@
 				7D4BE9942811CD34008318A5 /* BurgerHouseTests */,
 				7D4BE99E2811CD34008318A5 /* BurgerHouseUITests */,
 				7D4BE9792811CD31008318A5 /* Products */,
+				2528518F06FC4DED8F755738 /* Pods */,
+				E2A08B1D78B832082771B715 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +143,7 @@
 		7D4BE97A2811CD31008318A5 /* BurgerHouse */ = {
 			isa = PBXGroup;
 			children = (
+				7DBBD4FF28843416009B2E41 /* Layouts */,
 				7D4BE9B42811E6AA008318A5 /* BurgerList */,
 				7D4BE9CC2812CA4B008318A5 /* BurgerDetails */,
 				7D4BE9B22811E682008318A5 /* Services */,
@@ -230,6 +249,22 @@
 			path = AddInBasketView;
 			sourceTree = "<group>";
 		};
+		7DBBD4FF28843416009B2E41 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7DBBD50028843435009B2E41 /* PinterestLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		E2A08B1D78B832082771B715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE8F8C10A3ACF17E4258D0F /* Pods_BurgerHouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D4BE9A52811CD34008318A5 /* Build configuration list for PBXNativeTarget "BurgerHouse" */;
 			buildPhases = (
+				C0B6B7BB4BECD409B077802E /* [CP] Check Pods Manifest.lock */,
 				7D4BE9742811CD31008318A5 /* Sources */,
 				7D4BE9752811CD31008318A5 /* Frameworks */,
 				7D4BE9C1281262C1008318A5 /* Resources */,
+				F2B499A09033CE2F230641BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,6 +394,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C0B6B7BB4BECD409B077802E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BurgerHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B499A09033CE2F230641BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BurgerHouse/Pods-BurgerHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BurgerHouse/Pods-BurgerHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BurgerHouse/Pods-BurgerHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D4BE9742811CD31008318A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -374,6 +453,7 @@
 				7D4BE9CE2812CAD0008318A5 /* BurgerDetailsViewController.swift in Sources */,
 				7D4BE9BF2811EA59008318A5 /* BurgerCellViewModel.swift in Sources */,
 				7D4BE9AF2811CD4B008318A5 /* NetworkManager.swift in Sources */,
+				7DBBD50128843435009B2E41 /* PinterestLayout.swift in Sources */,
 				7D4BE97E2811CD31008318A5 /* SceneDelegate.swift in Sources */,
 				7D4BE9862811CD31008318A5 /* BurgerHouse.xcdatamodeld in Sources */,
 				7D4BE9BC2811EA46008318A5 /* BurgerCell.swift in Sources */,
@@ -548,6 +628,7 @@
 		};
 		7D4BE9A62811CD34008318A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4391F4B5187BF3ADF441A0 /* Pods-BurgerHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -561,6 +642,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +658,7 @@
 		};
 		7D4BE9A72811CD34008318A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C765977AB8F7C7BC3D97537E /* Pods-BurgerHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -589,6 +672,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
